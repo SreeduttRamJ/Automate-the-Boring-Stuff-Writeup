@@ -61,11 +61,34 @@ value in bacon will be 20
 ![image](https://user-images.githubusercontent.com/113903135/216612024-272b3a96-37da-4834-be94-323f4dc93b68.png)
 
 7. What should the following two expressions evaluate to?
-  'spam' + 'spamspam'
-  'spam' * 3
+
+   'spam' + 'spamspam'<br>
+    'spam' * 3<br>
 ```
 'spam' + 'spamspam' will be evaluated to
-spamspamspam
+'spamspamspam'
 
 'spam'*3 will be evaluated to
-spamspamspam
+'spamspamspam'
+```
+![image](https://user-images.githubusercontent.com/113903135/216613357-bad27046-e0e1-4ef8-b2fe-3321822a8916.png)
+
+8. Why is eggs a valid variable name while 100 is invalid?
+
+```
+eggs is a valid variable as it contain only letters and follows the naming convention 
+for variables while 100 is a number and variable names cant start with numbers
+```
+
+9. What three functions can be used to get the integer, floating-point number, or string version of a value?
+```
+int() to get integer
+float() for floating point
+str() for string
+```
+![image](https://user-images.githubusercontent.com/113903135/216614814-7ed3223f-50cb-4c29-bef7-686b4d78339c.png)
+
+10. Why does this expression cause an error? How can you fix it?
+
+    'I have eaten ' + 99 + ' burritos.'<br>
+```
