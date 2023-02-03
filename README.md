@@ -92,3 +92,13 @@ str() for string
 
     'I have eaten ' + 99 + ' burritos.'<br>
 ```
+This code cause an error as concatination cannot happen between an integer value and string
+we can correct it by making 99 a string using str()
+```
+![image](https://user-images.githubusercontent.com/113903135/216639562-0c3f0e4d-2ce9-4fb0-b045-9266f29e0808.png)
+
+
+<h3>Chapter 2 – Flow Control</h3>
+
+Practice Questions
+
