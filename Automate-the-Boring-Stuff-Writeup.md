@@ -10,7 +10,7 @@ This book is a guide for toatal beginners to help them learn practical programmi
 
 Practice Questions
 
-1. Which of the following are operators, and which are values?
+1. Which of the following are operators, and which are values?\
 
    *<br>
    'hello'<br>
@@ -102,3 +102,6 @@ we can correct it by making 99 a string using str()
 
 Practice Questions
 
+1. What are the two values of the Boolean data type? How do you write them?
+```
+The two boolean values are true and false
