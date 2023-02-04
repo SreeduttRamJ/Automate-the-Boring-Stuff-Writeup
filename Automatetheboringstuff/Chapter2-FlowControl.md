@@ -38,7 +38,7 @@ NOT F => T
 ```
 4. What do the following expressions evaluate to?
 
-  a) (5 > 4) and (3 == 5)<br>
+      a) (5 > 4) and (3 == 5)<br>
   b) not (5 > 4)<br> 
   c) (5 > 4) or (3 == 5)<br>
   d) not ((5 > 4) or (3 == 5))<br>
@@ -53,4 +53,5 @@ d) False
 e) False
 f) True
 ```
+![image](https://user-images.githubusercontent.com/113903135/216751326-13268af4-5367-4359-b3b1-497c48b27834.png)
 
