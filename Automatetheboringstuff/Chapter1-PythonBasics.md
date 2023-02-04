@@ -1,11 +1,3 @@
-# Automate-the-Boring-Stuff-Writeup
-
-<h3>Chapter-0 Introduction</h3>
-
-AUTOMATE THE BORING STUFF WITH PYTHON is a work by Al Sweigart 
-
-This book is a guide for toatal beginners to help them learn practical programming, the book revovles around how to get the code to work with the least amount of work on your part.
-
 <h3>Chapter 1 – Python Basics</h3>
 
 Practice Questions
@@ -96,12 +88,3 @@ This code cause an error as concatination cannot happen between an integer value
 we can correct it by making 99 a string using str()
 ```
 ![image](https://user-images.githubusercontent.com/113903135/216639562-0c3f0e4d-2ce9-4fb0-b045-9266f29e0808.png)
-
-
-<h3>Chapter 2 – Flow Control</h3>
-
-Practice Questions
-
-1. What are the two values of the Boolean data type? How do you write them?
-```
-The two boolean values are true and false
