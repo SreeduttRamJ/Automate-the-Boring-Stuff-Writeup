@@ -10,5 +10,5 @@ This book is a guide for toatal beginners to help them learn practical programmi
 
 Part I: Python Programming Basics
 
-Chapter 1: Python Basics 
-Chapter 2: Flow Control
+- Chapter 1: [Python Basics](https://github.com/SreeduttRamJ/bi0sTasks/blob/main/Automatetheboringstuff/Chapter1-PythonBasics.md)
+- Chapter 2: [Flow Control]()
