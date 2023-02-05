@@ -12,3 +12,5 @@ Part I: Python Programming Basics
 
 - Chapter 1: [Python Basics](https://github.com/SreeduttRamJ/bi0sTasks/blob/main/Automatetheboringstuff/Chapter1-PythonBasics.md)
 - Chapter 2: [Flow Control](https://github.com/SreeduttRamJ/bi0sTasks/blob/main/Automatetheboringstuff/Chapter2-FlowControl.md)
+- Chapter 3: [Functions](https://github.com/SreeduttRamJ/bi0sTasks/blob/main/Automatetheboringstuff/Chapter3-Functions.md)
+- Chapter 4: [Lists](https://github.com/SreeduttRamJ/bi0sTasks/blob/main/Automatetheboringstuff/Chapter4-Lists.md)
