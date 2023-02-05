@@ -2,7 +2,7 @@
 
 <h3>Chapter 3 - Functions</h3>
 
-Practice Questions
+Practice Questions<br></br>
 
 1. Why are functions advantageous to have in your programs?
 
