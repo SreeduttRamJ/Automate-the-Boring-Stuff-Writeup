@@ -156,6 +156,9 @@ Say you have a list value like this:
 spam = ['apples', 'bananas', 'tofu', 'cats']
 
 Write a function that takes a list value as an argument and returns a string with all the items separated by a comma and a space, with and inserted before the last item. For example, passing the previous spam list to the function would return 'apples, bananas, tofu, and cats'. But your function should be able to work with any list value passed to it. Be sure to test the case where an empty list [] is passed to your function.
+
+> ANSWER
+
 ```
 l=['apples', 'bananas', 'tofu', 'cats']
 for i in range(len(l)):
@@ -187,6 +190,8 @@ print('Chance of streak: %s%%' % (numberOfStreaks / 100))
 
 Of course, this is only an estimate, but 10,000 is a decent sample size. Some knowledge of mathematics could give you the exact answer and save you the trouble of writing a program, but programmers are notoriously bad at math.
 
+> ANSWER
+
 ```
 import random
 numberOfStreaks = 0
@@ -206,7 +211,7 @@ print('Chance of streak: %s%%' % (numberOfStreaks / 100))
 
 
 Say you have a list of lists where each value in the inner lists is a one-character string, like this:
-
+```
 grid = [['.', '.', '.', '.', '.', '.'],
         ['.', 'O', 'O', '.', '.', '.'],
         ['O', 'O', 'O', 'O', '.', '.'],
@@ -216,17 +221,21 @@ grid = [['.', '.', '.', '.', '.', '.'],
         ['O', 'O', 'O', 'O', '.', '.'],
         ['.', 'O', 'O', '.', '.', '.'],
         ['.', '.', '.', '.', '.', '.']]
+```
 
 Think of grid[x][y] as being the character at the x- and y-coordinates of a “picture” drawn with text characters. The (0, 0) origin is in the upper-left corner, the x-coordinates increase going right, and the y-coordinates increase going down.
 
 Copy the previous grid value, and write code that uses it to print the image.
-
+```
 ..OO.OO..
 .OOOOOOO.
 .OOOOOOO.
 ..OOOOO..
 ...OOO...
 ....O....
+```
+
+> ANSWER
 
 ```
 grid = [['.', '.', '.', '.', '.', '.'],
