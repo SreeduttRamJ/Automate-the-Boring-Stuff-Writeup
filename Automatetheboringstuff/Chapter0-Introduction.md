@@ -15,3 +15,4 @@ Part I: Python Programming Basics
 - Chapter 3: [Functions](https://github.com/SreeduttRamJ/bi0sTasks/blob/main/Automatetheboringstuff/Chapter3-Functions.md)
 - Chapter 4: [Lists](https://github.com/SreeduttRamJ/bi0sTasks/blob/main/Automatetheboringstuff/Chapter4-Lists.md)
 - Chapter 5: [Dictionaries and structuring data](https://github.com/SreeduttRamJ/bi0sTasks/blob/main/Automatetheboringstuff/Chapter5-Dictionariesandstructuringdata.md)
+- Chapter 6: [Manipulating Strings](https://github.com/SreeduttRamJ/bi0sTasks/blob/main/Automatetheboringstuff/Chapter6-ManipulatingStrings.md)
