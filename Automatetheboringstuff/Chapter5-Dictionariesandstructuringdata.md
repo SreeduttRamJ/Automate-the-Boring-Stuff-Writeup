@@ -73,3 +73,42 @@ A valid board will have exactly one black king and exactly one white king. Each 
 
 > ANSWER
 ```
+def isValidChessBoard(d):
+    bpiece=0
+    wpiece=0
+    for i in d.values():
+        if i[0]=='w':
+            wpiece=wpiece+1
+        elif i[0]=='b':
+            bpiece=bpiece+1
+        else:
+            return False
+    if bpiece != 16 or wpiece != 16:
+        return False
+    for i in d.keys():
+        if i[0]>8 or i[1] not in ['a','b','c','d','e','f','g','h']:
+            return False
+    lw=['king','queen','knight','knight','bishop','bishop','rook','rook','pawn']        
+    lb=['king','queen','knight','knight','bishop','bishop','rook','rook','pawn']
+    bp=wp=8
+    for i in d.values():
+        if i[0]=='w' and i[1:] in lw:
+             if i[1:]=='pawn' and wp!=0:
+                 wp=wp-1
+             else:
+                 lw.remove(i[1:])
+        elif i[0]=='b' and i[1:] in lb:
+            if i[1:]=='pawn' and bp!=0:
+                 bp=bp-1
+            else:
+                 lb.remove(i[1:])
+        else:
+            return False
+    return True
+
+    
+
+
+chess={'1h': 'king', '6c': 'wqueen', '2g': 'bbishop', '5h': 'bqueen', '3e': 'wking'}
+print(isValidChessBoard(chess))
+```
