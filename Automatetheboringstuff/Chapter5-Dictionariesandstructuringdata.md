@@ -1,4 +1,4 @@
-# Automate-the-Boring-Stuff-Writeup
+# Automate-the-Boring-Stuff-Write
 
 <h3>Chapter 5 - Dictionaries and structuring data</h3>
 
