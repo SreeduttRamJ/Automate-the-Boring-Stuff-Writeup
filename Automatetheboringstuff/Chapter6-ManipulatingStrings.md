@@ -100,3 +100,5 @@ lstrip() is used to trim only at the beginning
 rstrip() is used to trim only at the end
 ```
 ![image](https://user-images.githubusercontent.com/113903135/217650757-79271e5a-3904-41f7-929d-3c350bd7b995.png)
+
+<h4>Practice Projects </h4><br></br>
