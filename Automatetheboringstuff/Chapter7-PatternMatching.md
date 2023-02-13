@@ -57,11 +57,76 @@ list of groups if groups are present while gives a list of string if no group
 ```
 It used as an or operator 
 That is if you have to search for either a or b we use | 
+It gives first occurance as the output
+
+CODE:
+import re
+date=re.compile(r'aron|qw|ice')
+x=date.search('wwd aron qw ice')
+
+OUTPUT
+
+ice
 ```
+![image](https://user-images.githubusercontent.com/113903135/218544287-3ccb2760-e5fe-4ea8-bb77-f730a3f2a52c.png)
+
 
 9. What two things does the ? character signify in regular expressions?
 
 ```
 ? is used as an if condition
 that is we want to match a pattern optionally
+
+
+CODE:
+
+import re
+date=re.compile(r'ice(tea)?')
+x=date.search('wwd aron qw ice')
+y=date.search('wwd aron qw icetea')
+
+OUTPUT:
+
+ice
+icetea
+```
+10. What is the difference between the + and * characters in regular expressions?
+
+```
+* mean zero or more 
+That is the term to be matched even if not there there is no issue
+
++ mean one or more 
+That is the term to be matched should be present atleast once 
+
+CODE:
+
+import re
+date=re.compile(r'ice(tea)*')
+x=date.search('wwd aron qw ice')
+y=date.search('wwd aron qw iceteateatea')
+date=re.compile(r'ice(tea)+')
+z=date.search('wwd aron qw ice')
+q=date.search('wwd aron qw iceteateatea')
+
+OUTPUT:
+
+ice
+iceteateatea
+None
+iceteateatea
+
+```
+11. What is the difference between {3} and {3,5} in regular expressions?
+
+```
+(ice){3} is the same as (ice)(ice)(ice)
+That is it check for iceiceice
+
+(ice){3,5} is the same as (ice)(ice)(ice)|(ice)(ice)(ice)(ice)|(ice)(ice)(ice)(ice)(ice)
+That is it cahecks for either iceiceice or iceiceiceice or iceiceiceiceice
+```
+
+12. What do the \d, \w, and \s shorthand character classes signify in regular expressions?
+```
 ```
