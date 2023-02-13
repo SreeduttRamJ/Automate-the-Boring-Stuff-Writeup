@@ -42,5 +42,26 @@ group 2 cover the second parenthesis
 6. Parentheses and periods have specific meanings in regular expression syntax. How would you specify that you want a regex to match actual parentheses and period characters?
 
 ```
+One can just use \ for escaping periods and parenthesis so you can use actual parentheses & period characters
+```
 
+7. The findall() method returns a list of strings or a list of tuples of strings. What makes it return one or the other?
+
+```
+list of groups if groups are present while gives a list of string if no group
+```
+![image](https://user-images.githubusercontent.com/113903135/218538571-9b7a92b8-663f-4062-8fe3-5be82645e2cf.png)
+
+8. What does the | character signify in regular expressions?
+
+```
+It used as an or operator 
+That is if you have to search for either a or b we use | 
+```
+
+9. What two things does the ? character signify in regular expressions?
+
+```
+? is used as an if condition
+that is we want to match a pattern optionally
 ```
