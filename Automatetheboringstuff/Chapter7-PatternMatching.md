@@ -129,5 +129,203 @@ That is it cahecks for either iceiceice or iceiceiceice or iceiceiceiceice
 
 12. What do the \d, \w, and \s shorthand character classes signify in regular expressions?
 ```
+\d represent any numeric 1 t0 9
+\w represent any letter, numeric digit, or the underscore character.(used for words)
+\s represent any space, tab , newline
+```
+13. What do the \D, \W, and \S shorthand character classes signify in regular expressions?
+
+```
+\D represent any character that is not a numeric 1 to 9
+\W represent any character that is not a letter, numeric digit, or the underscore character.
+\S represent any character that is not a space, tab , newline
 ```
 
+14. What is the difference between .* and .*? ?
+
+```
+. means any character other than newline and * means 0 or more characters
+
+.* matches as much characters as possible to match
+.*? matches the minimum characters required to match
+
+CODE:
+import re
+date=re.compile(r'ice(.*)tea')
+x=date.search('wwd aron qw ice tea')
+y=date.search('wwd aron qw icetea tea tea')
+date=re.compile(r'ice(.*?)tea')
+z=date.search('wwd aron qw ice  tea')
+q=date.search('wwd aron qw icetea tea tea')
+
+OUTPUT:
+ice tea
+icetea tea tea
+ice  tea
+icetea
+```
+15. What is the character class syntax to match all numbers and lowercase letters?
+
+```
+we can use [a-z0-9] as the range
+
+CODE:
+import re
+date=re.compile(r'[a-z0-9]')
+x=date.findall('wwd aron qw ice 1231 tea 214323')
+
+OUTPUT:
+['w', 'w', 'd', 'a', 'r', 'o', 'n', 'q', 'w', 'i', 'c', 'e', '1', '2', '3', '1', 't', 'e', '
+a', '2', '1', '4', '3', '2', '3']
+```
+
+16. How do you make a regular expression case-insensitive?
+
+```
+We can use re.I to make the expression case insensitive
+
+CODE:
+import re
+date=re.compile(r'ICE')
+x=date.findall('wwd aron qw ICE ice Ice')
+date=re.compile(r'ICE',re.I)
+y=date.findall('wwd aron qw ICE ice Ice')
+
+OUTPUT:
+['ICE']
+['ICE', 'ice', 'Ice']
+```
+
+17. What does the . character normally match? What does it match if re.DOTALL is passed as the second argument to re.compile()?
+
+```
+. character match any character except mewline 
+re.DOTALL is used to make . character read new line
+
+CODE:
+import re
+date=re.compile(r'.*')
+x=date.search('''wwd aron qw
+ ICE ice Ice''')
+date=re.compile(r'.*',re.DOTALL)
+y=date.search('''wwd aron qw 
+ICE ice Ice''')
+
+OUTPUT:
+wwd aron qw
+wwd aron qw \nICE ice Ice
+```
+
+18. If numRegex = re.compile(r'\d+'), what will numRegex.sub('X', '12 drummers, 11 pipers, five rings, 3 hens') return?
+
+```
+CODE:
+
+numRegex = re.compile(r'\d+')
+x=numRegex.sub('X', '12 drummers, 11 pipers, five rings, 3 hens')
+
+OUTPUT:
+X drummers, X pipers, five rings, X hens
+
+here we use \d+ to match one or more numeric characters until space
+sub is used to substitute the matched characters with given character 
+```
+
+19. What does passing re.VERBOSE as the second argument to re.compile() allow you to do?
+
+```
+re.VERBOSE allow you to type your regular expression in multiline
+```
+
+20. How would you write a regex that matches a number with commas for every three digits? It must match the following:
+
+- '42'
+- '1,234'
+- '6,368,745'
+
+but not the following:
+
+- '12,34,567' (which has only two digits between the commas)
+- '1234' (which lacks commas)
+
+```
+CODE:
+import re
+date=re.compile(r'((^\d{1,3},)(\d\d\d(,)?)*$)')
+x=date.search('23,123,123')
+y=date.search('14,13,121')
+z=date.search('1234')
+q=date.search('123,12,111')
+
+OUTPUT:
+23,123,123
+None
+None
+None
+
+```
+
+21. How would you write a regex that matches the full name of someone whose last name is Watanabe? You can assume that the first name that comes before it will always be one word that begins with a capital letter. The regex must match the following:
+
+- 'Haruto Watanabe'
+- 'Alice Watanabe'
+- 'RoboCop Watanabe'
+
+but not the following:
+
+- 'haruto Watanabe' (where the first name is not capitalized)
+- 'Mr. Watanabe' (where the preceding word has a nonletter character)
+- 'Watanabe' (which has no first name)
+- 'Haruto watanabe' (where Watanabe is not capitalized)
+
+```
+CODE:
+
+import re
+date=re.compile(r'^[A-Z]([A-Za-z])*\sWatanabe$')
+x=date.search('Watanabe')
+y=date.search('RoboCop Watanabe')
+z=date.search('Mr. Watanabe')
+q=date.search('Haruto watanabe')
+
+OUTPUT:
+
+None
+RoboCop Watanabe
+None
+None
+```
+
+22. How would you write a regex that matches a sentence where the first word is either Alice, Bob, or Carol; the second word is either eats, pets, or throws; the third word is apples, cats, or baseballs; and the sentence ends with a period? This regex should be case-insensitive. It must match the following:
+
+- 'Alice eats apples.'
+- 'Bob pets cats.'
+- 'Carol throws baseballs.'
+- 'Alice throws Apples.'
+- 'BOB EATS CATS.'
+
+but not the following:
+
+- 'RoboCop eats apples.'
+- 'ALICE THROWS FOOTBALLS.'
+- 'Carol eats 7 cats.'
+
+```
+CODE:
+
+import re
+date=re.compile(r'''^
+(ALICE|BOB|CAROL)\s
+(THROWS|EATS|PETS)\s
+(CATS.|APPLES.|BASEBALLS.)
+$''',re.VERBOSE|re.I)
+x=date.search('BOB EATS CATS.')
+y=date.search('Carol throws base')
+z=date.search('Carol eats 7 cats.')
+q=date.search('Alice eats apples.')
+
+OUTPUT:
+BOB EATS CATS.
+None
+None
+Alice eats apples.
