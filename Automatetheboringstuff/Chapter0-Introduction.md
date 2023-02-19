@@ -18,3 +18,4 @@ Part I: Python Programming Basics
 - Chapter 6: [Manipulating Strings](https://github.com/SreeduttRamJ/bi0sTasks/blob/main/Automatetheboringstuff/Chapter6-ManipulatingStrings.md)
 - Chapter 7: [Pattern Matching With Regular Expressions](https://github.com/SreeduttRamJ/bi0sTasks/blob/main/Automatetheboringstuff/Chapter7-PatternMatching.md)
 - Chapter 8: [Input Validation](https://github.com/SreeduttRamJ/bi0sTasks/blob/main/Automatetheboringstuff/Chapter8-InputValidation.md)
+- Chapter 9: [Reading and Writing Files](https://github.com/SreeduttRamJ/bi0sTasks/blob/main/Automatetheboringstuff/Chapter9-ReadingandWritingFiles.md)
