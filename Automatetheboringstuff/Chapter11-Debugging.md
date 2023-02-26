@@ -53,6 +53,55 @@ we can just add filename to basicConfig
 ```
 6. What are the five logging levels?
 
+|    Level    |   Logging function   | 
+|:-----------:|:---------------------:|
+|Debug|logging.debug()|
+|Info|logging.info()|
+|Warning|logging.warning()|
+|Error|logging.error()|
+|Critical|logging.critical()|
+
+7. What line of code can you add to disable all logging messages in your program?
+
 ```
+logging.disable()
+```
+
+8. Why is using logging messages better than using print() to display the same message?
+
+```
+After a person compelete the debugging removing the print() is a hassle while we can disable logging messages easily by using
+logging.disable()
+```
+
+9. What are the differences between the Step Over, Step In, and Step Out buttons in the debugger?
+
+```
+Step In button execute next line of code and pause if its a function call it will goto the first line of function and stop
+
+Step Over button is same as Step In but if the next line us a function call it execute code in normal speed and pause after function return
+
+Step Out button is mostly used with step in function that is if step in enters a function and you need to get out of it You use step out which will execute the function and pause at return
+```
+
+10. After you click Continue, when will the debugger stop?
+
+```
+Debugger stop at the break point or compelete execution of the code
+```
+
+11. What is a breakpoint?
+
+```
+It is used to stop or pause the execution of a program
+```
+
+12. How do you set a breakpoint on a line of code in Mu?
+
+```
+You can just click on the code line were you want the break point
+```
+![image](https://user-images.githubusercontent.com/113903135/221391663-dca1edc7-bcc4-4635-98db-fce1698c3673.png)
+
 
 
