@@ -99,9 +99,10 @@ It is used to stop or pause the execution of a program
 12. How do you set a breakpoint on a line of code in Mu?
 
 ```
-You can just click on the code line were you want the break point
+You can just click on the left of code line were you want the break point
+
 ```
-![image](https://user-images.githubusercontent.com/113903135/221391663-dca1edc7-bcc4-4635-98db-fce1698c3673.png)
+
 
 
 
